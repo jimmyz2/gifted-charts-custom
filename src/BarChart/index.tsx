@@ -484,14 +484,13 @@ export const BarChart = (props: PropTypes) => {
   const autoShiftLabels = props.autoShiftLabels || false;
 
   const labelsAppear = useCallback(() => {
-    opacValue.setValue(0);
     Animated.timing(opacValue, {
       toValue: 1,
       duration: 500,
       easing: Easing.ease,
       useNativeDriver: false,
     }).start();
-  }, [opacValue]);
+  }, []);
   // const moveBar = useCallback(() => {
   //   heightValue.setValue(0);
   //   Animated.timing(heightValue, {
