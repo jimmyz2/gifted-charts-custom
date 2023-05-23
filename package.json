@@ -46,7 +46,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-gesture-handler": "*"
   },
   "keywords": [
     "react-native",
